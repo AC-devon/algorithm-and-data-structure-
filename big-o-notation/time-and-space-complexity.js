@@ -41,6 +41,8 @@ function timeCalc(num, cb) {
   const t2 = performance.now();
   console.log(`time elapsed in ${(t2 - t1) / 1000} seconds`);
 }
+// TODO - functino the calc the amount of operations (time complexity);
+// TODO - functino the calc the amount of constants (space complexity);
 
 timeCalc(100, addUpNestLoop);
 
