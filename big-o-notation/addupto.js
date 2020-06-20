@@ -1,4 +1,4 @@
-function addUpTo(n) {
+function addUpToLoop(n) {
   const total = 0;
   for (let i = 0; i <= n; i++) {
     total += i;
@@ -6,7 +6,7 @@ function addUpTo(n) {
   return total;
 }
 
-function addUpTo2(n) {
+function addUpToFormula(n) {
   // zomg wut formula
   return (n * (n + 1)) / 2;
 }
@@ -18,4 +18,4 @@ function timeCalc(num, cb) {
   console.log(`time elapsed in ${(t2 - t1) / 1000} seconds`);
 }
 
-timeCalc(1000000000, addUpTo);
+timeCalc(1000000000, addUpToFormula);
