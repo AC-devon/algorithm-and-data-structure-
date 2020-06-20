@@ -33,7 +33,7 @@ function timeCalc(num, cb) {
   console.log(`time elapsed in ${(t2 - t1) / 1000} seconds`);
 }
 
-timeCalc(100, addUpToFormula);
+timeCalc(100, addUpNestLoop);
 
 /* conclusion 
   1. time space cannot be a good measurement of efficiency between 2 algorithms since the margin is diffrent between computers/conditions
