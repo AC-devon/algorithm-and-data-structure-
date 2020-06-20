@@ -2,6 +2,7 @@ h1, h2 {
   font-family: Lato;
 }
 iframe {
+  position:absolute;
   width:100%;
   height:100%;
 }
