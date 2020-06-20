@@ -46,16 +46,19 @@ timeCalc(100, addUpNestLoop);
 
 /* conclusion 
   // time complexity
-  1. time space cannot be a good measurement of efficiency between 2 algorithms since the margin is diffrent between computers/conditions
-  2. the big O relay of the amount of operations and not size of N
-  3. big O allow us to roughly calculate how the runtime of an algorithm grows as the inputs grow 
-  4. constants dont matter, 
+  *. time space cannot be a good measurement of efficiency between 2 algorithms since the margin is diffrent between computers/conditions
+  *. the big O relay of the amount of operations and not size of N
+  *. constants dont matter, 
   means:
    O(20n) = O(m).
    O(50) = O(1).
    O(100^2) = O(n^2).
 
    // space complexity
-  5, most primitives (boolean, numbers, undefined, null) are constant space
-  6. string complexity is O(n)
+  *, most primitives (boolean, numbers, undefined, null) are constant space
+  *. string complexity is O(n)
+  *. as the amount of constant grow - the space complexity grows
+  
+  // general
+   * big O allow us to roughly calculate how the runtime of an algorithm      grows as the inputs grow - so basically understand the trend
 */
