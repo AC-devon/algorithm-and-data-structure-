@@ -19,3 +19,8 @@ function timeCalc(num, cb) {
 }
 
 timeCalc(1000000000, addUpToFormula);
+
+/* conclusion 
+  1. time space cannot be a good measurement of efficiency between 2 algorithms since the margin is diffrent between computers/conditions
+  2. the big O relay of the amount of operations and not size of N
+*/
