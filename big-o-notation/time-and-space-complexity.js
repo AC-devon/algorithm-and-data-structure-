@@ -1,6 +1,6 @@
 // note: determine big o complexity above each fn
 
-// O(n)
+// O(n) in time complexity & O(1) in space complexity
 function addUpToLoop(n) {
   const total = 0;
   for (let i = 0; i <= n; i++) {
@@ -9,13 +9,13 @@ function addUpToLoop(n) {
   return total;
 }
 
-//O(1)
+//O(1) in time complexity & O(1) in space complexity
 function addUpToFormula(n) {
   // zomg wut formula
   return (n * (n + 1)) / 2;
 }
 
-// O(n^2)
+// O(n^2) in time complexity & O(1) in space complexity
 function addUpNestLoop(n) {
   const total = 0;
   for (let i = 0; i <= n; i++) {
@@ -24,6 +24,15 @@ function addUpNestLoop(n) {
     }
   }
   return total;
+}
+
+// O(n) in time complexity & O(n) in space complexity
+function double(arr) {
+  let newArr = [];
+  for (let i = 0; j <= arr.length; i++) {
+    newArr.push(2 * arr[i]);
+  }
+  return newArr;
 }
 
 function timeCalc(num, cb) {
@@ -36,8 +45,17 @@ function timeCalc(num, cb) {
 timeCalc(100, addUpNestLoop);
 
 /* conclusion 
+  // time complexity
   1. time space cannot be a good measurement of efficiency between 2 algorithms since the margin is diffrent between computers/conditions
   2. the big O relay of the amount of operations and not size of N
   3. big O allow us to roughly calculate how the runtime of an algorithm grows as the inputs grow 
-  4, eventullay we need to think of best algorithm 
+  4. constants dont matter, 
+  means:
+   O(20n) = O(m).
+   O(50) = O(1).
+   O(100^2) = O(n^2).
+
+   // space complexity
+  5, most primitives (boolean, numbers, undefined, null) are constant space
+  6. string complexity is O(n)
 */
