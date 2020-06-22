@@ -1,4 +1,4 @@
 import './style.css'
-import './section-1-5/problem-solving-approch.js';
+import './sections-1-5/problem-solving-approch.js';
 
 

@@ -22,16 +22,11 @@ function charCount(str){
 
   // lowercase the accept value  && remove special char by regex
   let editStr = str.toLowerCase().split(' ').join('').replace(/[^a-z0-9-]/g, '');
-  console.log(editStr)
+
   // forloop through our edited string
-  for(let i = 0; i< editStr.length; i++){
-    let char = editStr[i];
+  for(char of editStr){
     // increase char count inside object or set the key value pair to 1
-    if(letterObj[char] > 0){
-      letterObj[char]++
-    }else{
-      letterObj[char] = 1
-    }
+    letterObj[char] = ++letterObj[char] ||  1
   }
 
   // return edited object
