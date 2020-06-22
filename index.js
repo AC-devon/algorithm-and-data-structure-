@@ -1,4 +1,4 @@
 import './style.css'
-import './big-o-notation/time-and-space-complexity.js';
+import './section-1-5/tasks.js';
 
 
